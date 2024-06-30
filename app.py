@@ -5,6 +5,11 @@ from telegram_api import send_audio, send_message, set_webhook, get_file_path, s
 from utils import upload_file_to_gcs
 import config
 
+{
+    "secret_token": "2f6OpVEPB9nnhYLvrvgEWUp6fMy_3eNqobLfoSiapSgRSR73r",
+    "url": "https://gbb1tj70-8000.euw.devtunnels.ms/telegram"
+}
+
 router = APIRouter(
     prefix='',
     responses={404: {'description': 'Not found'}}
@@ -13,7 +18,7 @@ router = APIRouter(
 
 @router.get('/')
 def home():
-    return 'OK', 200
+    return 'OK Leanid', 200
 
 
 @router.post('/telegram')
